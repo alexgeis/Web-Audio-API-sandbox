@@ -2,7 +2,9 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Nav from "./Nav";
-import Oscillator from "./Oscillator";
+import OscillatorType from "./OscillatorType";
+import OscillatorFreq from "./OscillatorFreq";
+import OscillatorChromatic from "./OscillatorChromatic";
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Oscillator />
+      <OscillatorType />
+      <OscillatorFreq />
+      <OscillatorChromatic />
     </div>
   );
 }

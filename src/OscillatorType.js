@@ -1,11 +1,15 @@
 import React from "react";
 
-function Oscillator() {
+function OscillatorType() {
   var audioContext = new AudioContext();
 
   var oscillator = audioContext.createOscillator();
-  oscillator.type = "square";
   oscillator.connect(audioContext.destination);
+
+  // WAVEFORM TYPE
+  oscillator.type = "square";
+  // FREQUENCY
+  //   oscillator.frequency.value = 220
 
   function handleButtonClick(e) {
     e.preventDefault();
@@ -17,11 +21,11 @@ function Oscillator() {
     <>
       <p>
         an Oscillator created w/in the audio context and outputting a square
-        wave
+        wave at 440hz (middle A)
       </p>
       <button onClick={handleButtonClick}>Start Oscillator</button>
     </>
   );
 }
 
-export default Oscillator;
+export default OscillatorType;
