@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import OscillatorType from "./OscillatorType";
 import OscillatorFreq from "./OscillatorFreq";
 import OscillatorChromatic from "./OscillatorChromatic";
+import Sequence from "./Sequence";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <OscillatorType />
       <OscillatorFreq />
       <OscillatorChromatic />
+      <Sequence />
     </div>
   );
 }
