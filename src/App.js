@@ -6,6 +6,7 @@ import OscillatorType from "./OscillatorType";
 import OscillatorFreq from "./OscillatorFreq";
 import OscillatorChromatic from "./OscillatorChromatic";
 import Sequence from "./Sequence";
+import Filter from "./Filter";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <OscillatorFreq />
       <OscillatorChromatic />
       <Sequence />
+      <Filter />
     </div>
   );
 }
