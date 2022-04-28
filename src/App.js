@@ -1,24 +1,14 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Nav from "./Nav";
+import Oscillator from "./Oscillator";
 
 function App() {
-  var audioContext = new AudioContext();
-
-  var oscillator = audioContext.createOscillator();
-  oscillator.type = "sawtooth";
-  oscillator.connect(audioContext.destination);
-
-  oscillator.start(audioContext.currentTime);
-  oscillator.stop(audioContext.currentTime + 2);
-
-  function handleButtonClick(e) {
-    e.preventDefault();
-  }
-
   return (
     <div className="App">
-      <header className="App-header">
+      <Nav />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -31,8 +21,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-      <button onClick={handleButtonClick}></button>
+      </header> */}
+      <Oscillator />
     </div>
   );
 }
