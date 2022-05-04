@@ -9,6 +9,7 @@ import Sequence from "./Sequence";
 import Filter from "./Filter";
 import FilterMod from "./FilterMod";
 import Line from "./Line";
+import GainEnv from "./GainEnv";
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
       <Filter />
       <Line />
       <FilterMod />
+      <Line />
+      <GainEnv />
       <Line />
     </div>
   );
