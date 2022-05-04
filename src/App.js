@@ -8,6 +8,7 @@ import OscillatorChromatic from "./OscillatorChromatic";
 import Sequence from "./Sequence";
 import Filter from "./Filter";
 import FilterMod from "./FilterMod";
+import Line from "./Line";
 
 function App() {
   return (
@@ -28,11 +29,17 @@ function App() {
         </a>
       </header> */}
       <OscillatorType />
+      <Line />
       <OscillatorFreq />
+      <Line />
       <OscillatorChromatic />
+      <Line />
       <Sequence />
+      <Line />
       <Filter />
+      <Line />
       <FilterMod />
+      <Line />
     </div>
   );
 }
