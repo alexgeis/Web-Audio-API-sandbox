@@ -20,12 +20,12 @@ button {
   padding: 10px;
   border-radius: 15px;
   font-size: 20px;
+  background-color: whitesmoke;
+  transition: background-color 500ms ease-in-out;
 }
-/* button {
-  padding: 10px;
-  border-radius: 15px;
-  font-size: 20px;
-} */
+button:hover {
+  background-color: aquamarine;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
