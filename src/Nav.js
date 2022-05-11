@@ -14,6 +14,7 @@ function Nav() {
         <h1 style={{ textAlign: "center", color: "white" }}>
           Web Audio API Sandbox
         </h1>
+        <p>(please turn your volume down as you start these examples)</p>
       </nav>
     </>
   );
